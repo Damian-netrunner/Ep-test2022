@@ -1,0 +1,57 @@
+.rate__phraze {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.7138460874557495px;
+  text-align: left;
+  color: $dark-grey;
+}
+
+.rate__form {
+  position: relative;
+  width: 440px;
+  height: 48px;
+}
+
+.form__input{
+  border: none;
+  background-color: $light-blue;
+  border-radius: 25px;
+  padding: 12px;
+  padding-left: 20px;
+  width: 75%;
+  height: 48px;
+  outline: none;
+
+  &::placeholder{
+    color: $blue;
+    opacity: 0.6;
+}
+}
+
+
+/*надо попасть классом в input*/
+
+@media (min-width: $desktop-width) {
+  .rate {
+    margin-top: 123px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .rate__wrapper{
+    width: 564px;
+  }
+
+  .rate__phraze--first {
+    width: 91%;
+  }
+  .rate__phraze--second{
+    margin-top: 35px;
+    margin-bottom: 40px;
+    width: 97%;
+  }
+  .rate__picture-wrapper{
+    margin-top: 20px;
+    margin-right: 46px;
+  }
+}

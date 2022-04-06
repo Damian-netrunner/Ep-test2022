@@ -1,0 +1,58 @@
+.clients__heading {
+  @include heading;
+  margin-top: 160px;
+  margin-bottom: 90px;
+}
+.clients__item {
+  @include phraze;
+  padding-left: 0;
+}
+.clients__list {
+  list-style: none;
+}
+
+.clients__subheading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: $dark-grey;
+  letter-spacing: 0.44px;
+  margin-top: 35px;
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+
+.clients__phraze{
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 60px;
+}
+.clients__phraze--first {
+  width: 65%;
+}
+
+.clients__phraze--second {
+  width: 56%;
+}
+
+.clients__phraze--third {
+  width: 71%;
+}
+
+
+@media (min-width: $desktop-width) {
+  .clients__list{
+    display: flex;
+    justify-content: space-between;
+  }
+  .clients__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 33%;
+  }
+  .clients__img {
+    align-self: center;
+  }
+}

@@ -1,0 +1,66 @@
+.banks__heading {
+  @include heading;
+  letter-spacing: 1px;
+}
+
+.banks__list, .integrations__list {
+  list-style: none;
+}
+.integrations__item {
+  @include phraze;
+}
+
+.banks__inner-wrapper {
+  border: 1px solid $border;
+}
+
+@media (min-width: $desktop-width) {
+  .banks__wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+  .banks__inner-wrapper{
+    width: 534px;
+    height: 420px;
+  }
+  .banks__heading{
+    margin-top: 117px;
+    margin-bottom: 91px;
+  }
+  .banks__subheading{
+    color: $border;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.443077px;
+    padding-left: 40px;
+  }
+  .banks__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .banks__item:nth-child(2) {
+    width: 37%;
+  }
+  .banks__item:nth-child(3) {
+    width: 80%;
+  }
+  .banks__item:nth-child(4) {
+    display: flex;
+    width: 90%;
+    border-top: 1px solid $border;
+  }
+  .integrations__list {
+    margin-top: 35px;
+  }
+
+  .integrations__item {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+  }
+  .integrations__phraze{
+    margin-left: 20px;
+  }
+}

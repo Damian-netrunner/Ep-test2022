@@ -1,0 +1,21 @@
+.steps__heading {
+  @include heading;
+  margin-bottom: 82px;
+}
+
+.steps__item {
+  @include phraze;
+}
+
+@media (min-width: $desktop-width) {
+  .steps {
+    margin-top: 135px;
+  }
+  .steps__item {
+    width: 33%;
+  }
+  .steps__phraze {
+    width: 63%;
+    text-align: center;
+  }
+}

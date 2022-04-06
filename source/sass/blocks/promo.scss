@@ -1,0 +1,62 @@
+.promo__heading {
+  @include heading
+}
+
+.promo__phraze{
+  @include phraze
+}
+
+
+.form {
+  position: relative;
+  width: 440px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+.form___input {
+  background-color: $light-blue;
+  border: $light-blue;
+  border-radius: 25px;
+  padding: 12px;
+  width: 75%;
+  height: 48px;
+  outline: none;
+
+  &::placeholder{
+    color: $blue;
+}
+}
+
+.form__button {
+  background: $gradient-dark;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.4430769979953766px;
+  text-align: center;
+  background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+  border: none;
+  border-radius: 25px;
+  padding: 8px;
+  width: 161px;
+  color: $white;
+  position: absolute;
+  left: 275px;
+  height: 48px;
+  &:hover {
+    box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+    transition: 0.5s;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .picture {
+    margin-right: 85px;
+  }
+}

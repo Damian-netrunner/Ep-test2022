@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <title>Everypay</title>
+   </head>
+   <body class="page">
+      <header class="page__header header">
+        <nav class="header__navigation container">
+         <a class="logo" href="index.html">
+            <img src="img/logo.svg" alt="Everypay">
+          </a>
+          <ul class="site-navigation navigation">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link " href="#">Как это работает?</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Для кого</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Кейсы</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Тарифы</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="#">Безопасность</a>
+            </li>
+          </ul>
+          <ul class="lang-navigation">
+            <li class="lang-navigation__item">
+              <a class="lang-navigation__link lang-navigation__link--ru" href="#">RU</a>
+            </li>
+            <li class="lang-navigation__item">
+              <a class="lang-navigation__link lang-navigation__link--eng" href="#">ENG</a>
+            </li>
+          </ul>
+          <div class="botton-wrapper">
+          <a href="#" class="button">Подключиться</a>
+        </div>
+        </nav>
+      </header>
+      <main class ="page__content">
+        <h1 class="visually-hidden">Платежная платформа Everypay</h1>
+         <!-- Основное содержимое страницы -->
+         <section class="promo container">
+            <div class="promo__wrapper">
+               <p class="promo__heading">Не пропускайте важные оплаты</p>
+               <p class="promo__phraze">Если от них зависят ваши проекты или старт рекламных кампаний</p>
+
+               <form class="form">
+                     <input class="form___input" type="email" name="email" placeholder="Введите email*" required>
+                     <input class="form__button "type="submit" value="Узнать">
+               </form>
+            </div>
+            <div class="picture">
+               <img src="img/money.svg" alt="">
+            </div>
+         </section>
+         <section class="sentence container">
+            <div class="sentence__wrapper">
+               <p class="sentence__heading">Мы предлагаем вам простой инструмент, чтобы автоматизировать информирование о поступающих оплатах.</p>
+               <p class="sentence__phraze">Бухгалтер на карантине, а директор недоступен? Ответственный сотрудник моментально узнает
+                  о поступлении денег на счет компании.</p>
+            </div>
+            <div class="sentence__img-wrapper">
+               <img src="img/chat.svg" alt="">
+            </div>
+
+         </section>
+   <section class="steps container">
+      <h2 class="steps__heading">Как это работает</h2>
+   <!--подумать как сделать семантически список с картинками, скорее всего псевдоклассы -->
+   <ul class="steps__list">
+      <li class="steps__item">
+        <img class="steps__image" src="img/cash.svg">
+        <p class="steps__phraze">Подключите свой банковский счет</p>
+      </li>
+      <li class="steps__item">
+        <img class="steps__image" src="img/choice.svg">
+        <p class="steps__phraze">Выберите, куда и кому отправлять информацию</p>
+      </li>
+      <li class="steps__item">
+        <img class="steps__image"src="img/notification.svg">
+        <p class="steps__phraze">Получайте информацию
+          о поступивших оплатах</p>
+      </li>
+   </ul>
+   </section>
+
+   <section class="call container">
+   <div class="call__wrapper">
+      <p class="call__heading heading">Автоматизируйте бизнес-процессы</p>
+   </div>
+   <div class="call__wrapper">
+      <p class="call__phraze">Подключайте привычные приложения, которые вы используете в работе.</p>
+      <form class="call__form call-form">
+         <input class="call-form___input" type="email" name="email" placeholder="введите email*" required>
+         <input class="call-form___button" type="submit" value="Узнать">
+      </form>
+   </div>
+   </section>
+   <section class="banks integrations container">
+      <h2 class="banks__heading heading">Банки и интеграции</h2>
+      <div class="banks__wrapper">
+      <div class="banks__inner-wrapper">
+      <h3 class="banks__subheading">Банки</h3>
+      <ul class="banks__list">
+         <li class="banks__item"><img src="img/dot.png" alt="" ></li>
+         <li class="banks__item"><img src="img/tinkoff.png" alt=""></li>
+         <li class="banks__item"><img src="img/module.png" alt="" ></li>
+         <li class="banks__item"><img src="img/csv.svg"><p>Загрузка из <span>1С</span></p></li>
+      </ul>
+      </div>
+      <div class="banks__inner-wrapper">
+        <h3 class="banks__subheading">Интеграции</h3>
+      <ul class="integrations__list">
+         <li class="integrations__item">
+          <img class="img" src="img/push.svg">
+          <p class="integrations__phraze">Push-web уведомления</p>
+        </li>
+         <li class="integrations__item">
+          <img class="img" src="img/email.svg">
+          <p class="integrations__phraze">E-mail уведомления</p></li>
+         <li class="integrations__item">
+          <img class="img" src="img/telegram.svg">
+          <p class="integrations__phraze">Telegram</p>
+        </li>
+      </ul>
+      </div>
+      </div>
+   </section>
+   <section class="clients container">
+    <h2 class="clients__heading heading">Для кого</h2>
+    <ul class="clients__list">
+       <li class="clients__item">
+         <img class="clients__img" src="img/money-tree.svg">
+         <p class="clients__subheading">Малый бизнес</p>
+         <p class="clients__phraze clients__phraze--first">Скорость получения информации о платежах
+          и минимизация издержек</p>
+          </li>
+       <li class="clients__item">
+        <img class="clients__img" src="img/unicorn.svg">
+         <p class="clients__subheading ">Стартапы</p>
+         <p class="clients__phraze clients__phraze--second">Автоматизация бизнес-процессов
+          и бухгалтерской рутины</p>
+          </li>
+       <li class="clients__item">
+        <img class="clients__img" src="img/lamp.svg">
+         <p class="clients__subheading ">Разработчики</p>
+         <p class="clients__phraze clients__phraze--third">Быстрое внедрение своих приложений для малого бизнеса и стартапов</p>
+         </li>
+    </ul>
+ </section>
+   <section class="cases container">
+      <h2 class="cases__heading heading">Кейсы</h2>
+      <ul class="cases__list">
+         <li class="cases__item">
+           <img class="cases__img--first" src="img/telegramm.svg" alt="">
+           <p class="cases__phraze">Автоматизация диджитал-агентства</p>
+           <a class="cases__link" href="#">Читать кейс</a></li>
+          </li>
+         <li class="cases__item">
+          <img class="cases__img" src="img/bitrix.svg" alt="">
+          <p class="cases__phraze">Приём платежей
+            в рекламной медиа-группе</p>
+            <a class="cases__link" href="#">Читать кейс</a></li>
+          </li>
+         <li class="cases__item">
+          <img class="cases__img" src="img/bitrix.svg" alt="">
+          <p class="cases__phraze">Оптимизация бухгалтерии
+            в производственной
+            компании</p>
+          <a class="cases__link" href="#">Читать кейс</a></li>
+          </li>
+      </ul>
+   </section>
+
+   <section class="rate container">
+      <div class="rate__wrapper">
+      <h2 class="rate__heading heading">Тарифы</h2>
+      <p class="rate__phraze rate__phraze--first">Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться к тестированию сервиса. </p>
+      <p class="rate__phraze rate__phraze--second">Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам
+        и мы с вами свяжемся.</p>
+        <form class="rate__form rate-form">
+          <input class="form__input" type="email" name="email" placeholder="Введите email" required>
+          <input class="form__button" type="submit" value="Узнать">
+       </form>
+      </div>
+      <div class="rate__picture-wrapper">
+        <img src="img/rate.svg" alt="">
+      </div>
+   </section>
+   <section class="upcoming container">
+      <h2 class="upcoming__heading heading">Скоро появится</h2>
+      <ul class="upcoming__list">
+         <li class="upcoming__item">
+            <p class="upcoming__phraze--medium">Интеграции с CRM-системами
+               Битрикс 24 и amoCRM</p>
+            <p class="upcoming__phraze upcoming__phraze--decoration">Интегрируйте уведомления о платежах прямо
+               в вашу CRM, в которой работают ваши сотрудники</p>
+         </li>
+         <li class="upcoming__item">
+            <p class="upcoming__phraze--medium">Открытое API Everypay</p>
+            <p class="upcoming__phraze">Подключайте свои системы и интегрируйте уведомления о поступающих платежах самостоятельно с помощью простого API Everypay</p>
+         </li>
+         <li class="upcoming__item">
+            <p class="upcoming__phraze--medium">Автоматическое создание платежек</p>
+            <p class="upcoming__phraze">Загрузите скан счета на оплату в нашу систему
+               и в банк-клиенте автоматически будет создано платежное поручение на основании данных из счета. С помощью технологий компьютерного зрения и машинного обучения мы достигаем высокой точности и скорости работы</p>
+         </li>
+      </ul>
+      <a class="upcoming__more" href="#">И еще 17 нововведений</a>
+   </section>
+   <section class="safety container">
+      <div class="safety__wrapper">
+      <h2 class="safety__heading heading">Безопасность</h2>
+      <p class="safety__phraze">Использование Everypay полностью безопасно: подключение к банковскому счету осуществляется в режиме «только
+         для получения выписок», а хранение информации в системе защищено
+         и деперсонализировано.</p>
+      </div>
+      <div class="safety__picture-wrapper"><img class="safety__picture" src="img/safety.svg" alt=""></div>
+   </section>
+      </main>
+      <footer class="page__footer footer">
+         <article class="connect container">
+            <div class="connect__wrapper">
+               <h2 class="connect__heading heading">Подключиться</h2>
+               <p class="connect__phraze">Хотите начать пользоваться системой? Напишите нам.</p>
+               <p class="email">email</p>
+               <a class="email-link"href="mailto:hello@everypay.io">hello@everypay.io</a>
+            </div>
+            <div class="form__wrapper">
+            <form class="contact-form">
+               <input class="contact-form__input" type="text" name="text" placeholder="Ваше имя*" required>
+               <input class="contact-form__input" type="email" name="email" placeholder="Email*" required>
+               <textarea class="contact-form__text" rows="2" cols="20" name="text" placeholder ="Расскажите о своей компании*"  required></textarea>
+               <input class="contact-form__button"type="submit" value="Подключиться">
+            </form>
+          </div>
+         </article>
+         <div class="footer__end container">
+          <p class="footer__year">© 2020, Everypay</p>
+          <a class="footer__politics" href="#">Политика конфиденциальности</a>
+         </div>
+      </footer>
+   </body>

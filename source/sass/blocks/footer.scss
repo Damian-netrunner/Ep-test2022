@@ -1,0 +1,135 @@
+.page__footer {
+  background-color: $light-blue;
+}
+.connect__phraze{
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.7138460874557495px;
+  text-align: left;
+
+}
+.email {
+  color: $border;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.7138460874557495px;
+}
+.email-link {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.7138460874557495px;
+  text-align: left;
+  color: $dark-grey;
+  text-decoration: none;
+}
+
+.contact-form__text {
+  line-height: 28px;
+  font-size: 18px;
+  resize: none;
+  border: 1px solid $border;
+  border-radius: 25px;
+  padding: 8px 20px;
+  &::placeholder{
+    color: $blue;
+    opacity: 0.6;
+    font-size: inherit;
+}
+}
+
+.contact-form__input {
+  line-height: 28px;
+  font-size: 18px;
+  background-color: $white;
+  border: $light-blue;
+  border-radius: 25px;
+  padding: 8px 20px;
+  border: 1px solid $border;
+  &::placeholder{
+    color: $blue;
+    opacity: 0.6;
+    font-size: inherit;
+}
+}
+
+.contact-form__button {
+ background: $gradient-dark;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 21px;
+  letter-spacing: 0.4430769979953766px;
+  text-align: center;
+  background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+  border: none;
+  border-radius: 25px;
+  padding: 13px 28px;
+  width: 172px;
+  color: $white;
+
+  &:hover {
+    box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+    transition: 0.5s;
+  }
+}
+
+.footer__politics {
+  color: $normal-blue;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-top: 39px;
+    margin-top: 77px;
+    height: 602px;
+  }
+  .connect {
+    display: flex;
+  }
+
+  .connect__phraze{
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .email {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+  }
+  .form__wrapper{
+    margin-top: 94px;
+  }
+  .contact-form__input {
+    margin-top: 20px;
+  }
+  .contact-form__text {
+    margin-top: 20px;
+  }
+  .contact-form__button{
+    margin-top: 20px;
+  }
+  .footer__end {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .footer__year {
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}

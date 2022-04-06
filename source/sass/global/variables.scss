@@ -1,0 +1,48 @@
+$white: #FFFFFF;
+$light-blue: #F3F9FF;
+$blue: #1792C7;
+$normal-blue: #00B8F0;
+$border:rgba(56, 152, 254, 0.4);
+$basic_grey: #F2F2F2;
+$light-grey:  rgba(85, 94, 104, 0.5);
+$grey: #555E68;
+$dark-grey: #2D3238;
+$gradient-dark: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+$background: #E8F4F6;
+$background-light:#E8F4F7;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width: 320px;
+
+@mixin heading {
+font-size: 40px;
+font-weight: 700;
+line-height: 46px;
+letter-spacing: 0.99px;
+text-align: left;
+color: $dark-grey;
+}
+
+@mixin phraze {
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0.4430769979953766px;
+text-align: left;
+color: $dark-grey;
+}
+
+@mixin medium_text {
+font-size: 28px;
+font-weight: 600;
+line-height: 36px;
+letter-spacing: 0.4;
+text-align: left;
+font-weight: 600;
+line-height: 36px;
+}
+
+
+
+
+

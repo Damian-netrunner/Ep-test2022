@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+ /* outline: 2px solid #4ba7e4; */
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+   /* padding: 0 171px; */
+    width: 1098px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .container {
+  /*padding: 0 117px; */
+  width: 534px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+  /*padding: 0 21px; */
+  width: 278px;
+  }
+}
