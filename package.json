@@ -6,7 +6,7 @@
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
-    "build": "gulp styles",
+    "build": "gulp build",
     "start": "gulp"
   },
   "repository": {
@@ -16,16 +16,26 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
     "autoprefixer": "^10.4.4",
     "browser-sync": "^2.27.9",
     "editorconfig-checker": "^4.0.2",
     "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
     "gulp-dart-sass": "^1.0.2",
     "gulp-dart-scss": "^1.1.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-libsquoosh": "^1.1.2",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-svgstore": "^9.0.0",
+    "gulp-terser": "^2.1.0",
     "postcss": "^8.4.12",
+    "postcss-csso": "^6.0.0",
     "stylelint": "^14.6.1"
   },
   "browserslist": [
@@ -46,5 +56,9 @@
   "engines": {
     "node": "^16"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@splidejs/splide": "^4.0.1",
+    "del": "^6.0.0"
+  }
 }

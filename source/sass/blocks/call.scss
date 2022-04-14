@@ -1,4 +1,4 @@
-.call-form___input {
+.call-form__input {
   border: 1px solid $border;
   background-color: $white;
   border-radius: 25px;
@@ -25,7 +25,7 @@ input:focus {
 }
 
 
-.call-form___button {
+.call-form__button {
   background: $gradient-dark;
   font-size: 16px;
   font-weight: 600;
@@ -48,7 +48,7 @@ input:focus {
 }
 
 .call {
-  background: $background-light;
+  background: $light-blue;
 }
 .call__phraze {
   @include phraze;
@@ -65,6 +65,10 @@ input:focus {
     height: 294px;
     display: flex;
     justify-content: space-between;
+    background-image: url(../img/grid.svg);
+    background-repeat: no-repeat;
+    background-size: 357px;
+    background-position: bottom 0px right 119px;
   }
   .call__heading {
     width: 70%;
@@ -80,3 +84,39 @@ input:focus {
     margin-top: 60px;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .call {
+    display: flex;
+    flex-direction: column;
+    width: 639px;
+    height: 388px;
+    margin-top: 82px;
+  }
+  .call__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .call__heading{
+    width: 80%;
+    text-align: center;
+    margin-top: 59px;
+    margin-bottom: 5px;
+  }
+  .call__img-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .call__phraze {
+    width: 70%;
+    text-align: center;
+  }
+  .call__form {
+    margin-top: 31px;
+    margin-right: 14px;
+  }
+}
+
+
+

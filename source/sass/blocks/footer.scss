@@ -47,6 +47,7 @@
   border: $light-blue;
   border-radius: 25px;
   padding: 8px 20px;
+  padding-right: 58px;
   border: 1px solid $border;
   &::placeholder{
     color: $blue;
@@ -89,11 +90,72 @@
     padding-top: 39px;
     margin-top: 77px;
     height: 602px;
+    background-image: url(../img/footer-grid.svg);
+    background-repeat: no-repeat;
+    background-size: 357px;
+    background-position: bottom 0px left 20px;
   }
   .connect {
     display: flex;
   }
 
+  .connect__phraze{
+    width: 60%;
+    margin-bottom: 20px;
+  }
+  .email {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 440px;
+  }
+  .form__wrapper{
+    margin-top: 94px;
+  }
+  .contact-form__input {
+    margin-top: 20px;
+  }
+  .contact-form__text {
+    margin-top: 20px;
+  }
+  .contact-form__button{
+    margin-top: 20px;
+  }
+  .footer__end {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+  .footer__year {
+    font-family: Montserrat;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 10px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+}
+
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .footer {
+    padding-top: 39px;
+    margin-top: 77px;
+    height: 840px;
+  }
+  .connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .connect__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .connect__phraze{
     width: 60%;
     margin-bottom: 20px;

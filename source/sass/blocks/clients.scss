@@ -9,6 +9,8 @@
 }
 .clients__list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .clients__subheading {
@@ -49,10 +51,45 @@
   .clients__item {
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     width: 33%;
   }
   .clients__img {
     align-self: center;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .clients {
+    width: 639px;
+  }
+
+  .clients__heading {
+    margin-top: 110px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .clients__subheading {
+    margin-left: 0;
+  }
+  .clients__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .clients__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 200px;
+  }
+  .clients__img {
+    align-self: center;
+  }
+  .clients__phraze {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 24px;
   }
 }

@@ -75,3 +75,43 @@
     margin-left: 20px;
   }
 }
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .cases__heading{
+    margin-top: 106px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .cases__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 994px;
+    }
+  .cases__item {
+    width: 310px;
+    height: 297px;
+    padding-left: 0;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+   }
+    .cases__img {
+    width: 197.67px;;
+    margin-bottom: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    }
+    .cases__img--first{
+    width: 165px;
+    margin-bottom: auto;
+    margin-top: 20px;
+    margin-left: 20px;
+    }
+    .cases__phraze {
+    margin-left: 20px;
+    }
+    .cases__link {
+    margin-left: 20px;
+    }
+}

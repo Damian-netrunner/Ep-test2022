@@ -61,5 +61,27 @@
   }
   .upcoming__phraze--decoration {
     margin-bottom: 100px;
+    position: relative;
   }
-}
+  .upcoming__phraze--decoration::after {
+    content: "";
+    position: absolute;
+    content: url(../img/bitrix-single.svg);
+    top: 93px;
+    left: 2px;
+  }
+  .upcoming__phraze--decoration::before {
+    content: "";
+    position: absolute;
+    content: url(../img/amocrm.svg);
+    top: 99px;
+    left: 73px;
+    }
+  }
+
+
+  @media (min-width: $tablet-width) and (max-width: 1439px) {
+    .upcoming__item::before {
+      left: -61px;
+    }
+  }

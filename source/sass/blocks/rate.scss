@@ -18,6 +18,7 @@
   background-color: $light-blue;
   border-radius: 25px;
   padding: 12px;
+  padding-right: 58px;
   padding-left: 20px;
   width: 75%;
   height: 48px;
@@ -34,12 +35,33 @@
 
 @media (min-width: $desktop-width) {
   .rate {
-    margin-top: 123px;
-    display: flex;
-    justify-content: space-between;
+    margin-top: 128px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 461px;
+    grid-template-rows: 82px 1fr 100px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "heading-wrapper heading-wrapper picture-wrapper"
+      "phraze-wrapper phraze-wrapper picture-wrapper"
+      "form-wrapper form-wrapper picture-wrapper";
   }
-  .rate__wrapper{
-    width: 564px;
+
+  .heading-wrapper {
+    grid-area: heading-wrapper;
+  }
+
+  .phraze-wrapper {
+    grid-area: phraze-wrapper;
+  }
+
+  .form-wrapper {
+    grid-area: form-wrapper;
+  }
+
+  .picture-wrapper {
+    grid-area: picture-wrapper;
+    margin-top: 15px;
   }
 
   .rate__phraze--first {
@@ -49,9 +71,77 @@
     margin-top: 35px;
     margin-bottom: 40px;
     width: 97%;
+    letter-spacing: 0.7138460875px;
   }
   .rate__picture-wrapper{
     margin-top: 20px;
     margin-right: 46px;
+    letter-spacing: 0.7138460875px;
   }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .rate {
+    margin-top: 171px;
+    width: 640px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 235px;
+    grid-template-rows: 101px 1fr 60px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "heading-wrapper heading-wrapper heading-wrapper"
+      "phraze-wrapper phraze-wrapper picture-wrapper"
+      "form-wrapper form-wrapper form-wrapper";
+  }
+
+  .heading-wrapper {
+    grid-area: heading-wrapper;
+  }
+
+  .phraze-wrapper {
+    grid-area: phraze-wrapper;
+  }
+
+  .picture-wrapper {
+    grid-area: picture-wrapper;
+  }
+
+  .form-wrapper {
+    grid-area: form-wrapper;
+    margin-top: 23px;
+
+  }
+
+.rate-form {
+  margin: 0 auto;
+  margin-left: 108px;
+}
+
+.rate__picture {
+  width: 100%;
+  margin-left: -7px;
+  margin-top: 10px;
+}
+
+.rate__phraze {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.4430769979953766px;
+  text-align: left;
+}
+
+.rate__heading {
+    text-align: center;
+    margin: 0;
+}
+
+.rate__phraze--first {
+  width: 94%;
+  margin-bottom: 28px;
+}
+.rate__phraze--second {
+  width: 70%;
+}
 }
